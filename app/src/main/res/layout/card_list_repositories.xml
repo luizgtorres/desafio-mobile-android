@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="4dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/listRepositoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome repositório"
+            android:textColor="@color/colorRepositoryName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/maxDescriptionGuideline"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/listRepositoryDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Você vai gostar muito do contea ele é muito legal cara, presta atenção"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/maxDescriptionGuideline"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listRepositoryName"
+            app:layout_constraintWidth_default="wrap" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/listForkImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listOwnerLayout"
+            app:srcCompat="@drawable/ic_fork" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/listForkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:text="26856"
+            android:textColor="@color/colorStarAndFork"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/listForkImage"
+            app:layout_constraintTop_toTopOf="@+id/listForkImage" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/listStarImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            app:layout_constraintStart_toEndOf="@+id/listForkImage"
+            app:layout_constraintTop_toTopOf="@+id/listForkImage"
+            app:srcCompat="@drawable/ic_star" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/listStarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:text="26856"
+            android:textColor="@color/colorStarAndFork"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/listStarImage"
+            app:layout_constraintTop_toTopOf="@+id/listForkImage" />
+
+        <LinearLayout
+            android:id="@+id/listOwnerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="100"
+            app:layout_constraintLeft_toRightOf="@id/maxDescriptionGuideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/listPhotoOwner"
+                android:layout_width="@dimen/listPhotoOwnerRadius"
+                android:layout_height="@dimen/listPhotoOwnerRadius"
+                android:layout_gravity="center"
+                android:src="@color/colorPrimaryDark" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/listOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Username"
+                android:textColor="@color/colorOwnerName"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/maxDescriptionGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

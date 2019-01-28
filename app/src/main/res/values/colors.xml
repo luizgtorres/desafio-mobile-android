@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#343439</color>
+    <color name="colorPrimaryDark">#343439</color>
+    <color name="colorAccent">#3985ca</color>
+    <color name="colorOwnerName">#3985ca</color>
+    <color name="colorRepositoryName">#3976aa</color>
+    <color name="colorStarAndFork">#dd9206</color>
+</resources>

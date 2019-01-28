@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">desafio-mobile-android</string>
+    <string name="empty_pull_request">Não há pull requests nesse repositório.</string>
+</resources>
